@@ -6,5 +6,20 @@
 @mixin mobile
     @media screen and (max-width: 576px)
         @content
+
+@mixin image-anim
+    @keyframes fluctuation
+        0% 
+            transform: translate(0, 0)
+        50% 
+            transform: translate(0, 10px)
+        100% 
+            transform: translate(0, 0)
+
+@mixin anim-image-apply
+    animation-name: fluctuation
+    animation-duration: 6s
+    animation-iteration-count: infinite
+    animation-direction: alternate
     
     

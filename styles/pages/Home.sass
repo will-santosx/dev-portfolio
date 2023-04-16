@@ -5,9 +5,24 @@ main
     width: 100%
     overflow-x: hidden
 
+    @include mixin.mobile
+        display: flex
+        flex-direction: column
+        @include mixin.flex-center
+
+        img.mobile-image
+            width: 400px
+            margin-top: -1.6rem
+            @include mixin.anim-image-apply
+
+
     .welcome-titles
         color: #fff
         font-size: 24px
+
+        @include mixin.mobile
+            font-size: 20px
+            text-align: center
 
         h1
             background-image: linear-gradient(-90deg, variables.$primary-color 0%, #496be3 50%, variables.$primary-color 100%)
@@ -17,17 +32,31 @@ main
             margin-top: -1.3rem
             font-size: 64px
 
+            @include mixin.mobile
+                font-size: 36px
+                margin-top: -0.7rem
+
     .roles
         display: flex
         gap: 1rem
         color: #fff
         margin-bottom: 3rem
 
+        @include mixin.mobile
+            margin-bottom: 1.5rem
+
         .role-tags
             padding: 10px
             border-radius: 15px
             background-color: #0a0a0a
             box-shadow: 0 0 5px #000
+            @include mixin.flex-center
+            gap: 10px
+
+            @include mixin.mobile
+                padding: 5px
+                font-size: 12px
+                white-space: nowarp
 
             .r
                 color: #f66565
@@ -48,6 +77,10 @@ main
             width: 553px
             height: 60px
 
+            @include mixin.mobile
+                width: 313px
+                height: 34px
+
         button
             width: 100%
             height: 100%
@@ -59,6 +92,9 @@ main
             transition: 0.5s all
             color: #fff
             cursor: pointer
+
+            @include mixin.mobile
+                font-size: 16px
 
             &:hover
                 background-color: variables.$primary-color
@@ -76,5 +112,8 @@ main
         top: 3rem
         left: 54%
         filter: drop-shadow(0 3px 8px #000)
+        @include mixin.anim-image-apply
         @include mixin.mobile
             display: none
+
+    @include mixin.image-anim
