@@ -1,14 +1,18 @@
 import React from 'react'
 
+import Header from './components/Header'
+import Social from './components/Social'
 import '.././styles/index.sass'
 
-import Header from './components/Header'
+import { Outlet } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header/>
-    </div>
+      <Outlet/>
+      <Social/>    
+    </>
   )
 }
 

@@ -1,0 +1,80 @@
+@use '/styles/variables'
+@use '/styles/mixin'
+
+main
+    width: 100%
+    overflow-x: hidden
+
+    .welcome-titles
+        color: #fff
+        font-size: 24px
+
+        h1
+            background-image: linear-gradient(-90deg, variables.$primary-color 0%, #496be3 50%, variables.$primary-color 100%)
+            background-clip: text
+            -webkit-background-clip: text
+            color: transparent
+            margin-top: -1.3rem
+            font-size: 64px
+
+    .roles
+        display: flex
+        gap: 1rem
+        color: #fff
+        margin-bottom: 3rem
+
+        .role-tags
+            padding: 10px
+            border-radius: 15px
+            background-color: #0a0a0a
+            box-shadow: 0 0 5px #000
+
+            .r
+                color: #f66565
+            
+            .y
+                color: #e3fd95
+
+            .g
+                color: #b8ff89
+
+    .home-buttons
+        display: flex
+        gap: 1rem
+        flex-direction: column
+        margin-bottom: 5rem
+        
+        a
+            width: 553px
+            height: 60px
+
+        button
+            width: 100%
+            height: 100%
+            background-color: transparent
+            border: solid 2px variables.$primary-color
+            border-radius: 15px
+            font-family: 'Poppins', sans-serif
+            font-size: 24px
+            transition: 0.5s all
+            color: #fff
+            cursor: pointer
+
+            &:hover
+                background-color: variables.$primary-color
+                scale: 102%
+                filter: drop-shadow(#3354cc89 0 0 8px)
+
+    img.mobile-image
+        display: none
+
+        @include mixin.mobile
+            display: block
+    
+    img.desktop-image
+        position: absolute
+        top: 3rem
+        left: 54%
+        filter: drop-shadow(0 3px 8px #000)
+        @include mixin.mobile
+            display: none
