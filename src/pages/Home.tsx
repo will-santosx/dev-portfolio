@@ -6,7 +6,7 @@ import MobilehomeImage from '../../images/mobile-virtual-character.png'
 
 const Home = () => {
   return (
-    <main>
+    <main className='home-page'>
       <img className='mobile-image' src={MobilehomeImage} alt="Personagem virtual de Willians Santos" />
       <div className='welcome-titles'>
         <span>Olá, me chamo</span>

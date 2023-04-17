@@ -5,7 +5,7 @@ import ReactCountryFlag from "react-country-flag"
 
 const About = () => {
   return (
-    <main>
+    <main className='about-page'>
       <div className='about-me'>
         <h1>Aqui vai um pequeno resumo...</h1>
         <p>
