@@ -6,7 +6,7 @@ import ToolsCards from '../components/ToolsCards'
 const Tools = () => {
   return (
     <main className='tools-page'>
-      <h1>&lt;Habilidades/&gt;</h1>
+      <h1>&lt;/&gt;</h1>
       <div className='tools-cards-container'>
         <ToolsCards/>
       </div>

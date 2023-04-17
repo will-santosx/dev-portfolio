@@ -5,9 +5,13 @@ main.tools-page
     width: 100%
 
     h1
-        text-align: center
+        margin: 0 auto
         font-size: 64px
         margin-bottom: 4rem
+        border: 2px solid variables.$primary-color
+        padding: 5px
+        border-radius: 50%
+        width: fit-content
         @include mixin.title-gradient
 
         @include mixin.mobile
@@ -57,7 +61,7 @@ main.tools-page
             @include mixin.icon-color(#A259FF)
 
         .tools-card
-            width: 212px
+            width: 25%
             height: 243px
             background-color: #000
             border-radius: 15px

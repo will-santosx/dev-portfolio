@@ -1,6 +1,8 @@
 import React from 'react'
 
-import { SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiBootstrap, SiTypescript, SiJquery, SiReact, SiSass, SiGithub, SiGit, SiFigma } from "react-icons/si";
+import { 
+  SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiBootstrap, SiTypescript, SiJquery, SiReact, SiSass, SiGithub, SiGit, SiFigma
+ } from "react-icons/si";
 
 const technologies = [
   { id: 'html', name: 'HTML5', icon: <SiHtml5/>, url: 'https://developer.mozilla.org/pt-BR/docs/Web/HTML' },
