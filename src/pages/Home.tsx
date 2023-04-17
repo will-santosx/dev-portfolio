@@ -3,7 +3,6 @@ import React from 'react'
 import '../../styles/pages/Home.sass';
 import DesktophomeImage from '../../images/virtual-character.png'
 import MobilehomeImage from '../../images/mobile-virtual-character.png'
-import { FaInstagram } from 'react-icons/fa';
 
 const Home = () => {
   return (
