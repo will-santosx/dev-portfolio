@@ -1,0 +1,68 @@
+@use '../variables'
+@use '../mixin'
+
+main.tools-page
+    width: 100%
+
+    h1
+        text-align: center
+        font-size: 64px
+        margin-bottom: 4rem
+        @include mixin.title-gradient
+
+        @include mixin.mobile
+            font-size: 36px
+
+    .tools-cards-container
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        @include mixin.flex-center
+        gap: 1.3rem
+
+        .tools-card
+            width: 212px
+            height: 243px
+            background-color: #000
+            border-radius: 15px
+            @include mixin.flex-center
+            flex-direction: column
+            color: #fff
+            gap: 1rem
+            transition: 0.2s all
+            box-shadow: 0 0 5px #000
+
+            @include mixin.mobile
+                width: 46%
+
+            &:hover
+                scale: 110%
+
+            h3
+                color: #fff
+                font-weight: 500
+                letter-spacing: 1px
+            svg
+                padding: 10px
+                background-color: #0a0a0a
+                border-radius: 5px
+                font-size: 4rem
+                color: variables.$primary-color
+
+            button
+                font-family: 'Poppins', sans-serif
+                padding: 8px
+                border: 1px solid variables.$primary-color
+                cursor: pointer
+                background-color: transparent
+                color: #fff
+                border-radius: 10px
+                transition: 0.2s all
+
+                &:hover
+                    scale: 110%
+                    filter: drop-shadow(#3354cc89 0 0 8px)
+                    background-color: variables.$primary-color
+                    color: #fff
+
+    
