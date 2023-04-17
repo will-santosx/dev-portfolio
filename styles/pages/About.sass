@@ -1,0 +1,47 @@
+@use './../variables'
+@use './../mixin'
+
+main
+    @include mixin.flex-center
+    flex-direction: column
+
+    div.about-me
+        margin-bottom: 4rem
+
+        h1
+            @include mixin.title-gradient
+            font-size: 64px
+            margin-bottom: 1rem
+
+            @include mixin.mobile
+                font-size: 24px
+
+        p
+            color: #fff
+            font-size: 18px
+
+    div.languages-content
+        background-color: #000
+        border-radius: 15px
+        color: variables.$primary-color
+        padding: 10px
+        width: 615px
+        @include mixin.flex-center
+        justify-content: space-around
+
+        @include mixin.mobile
+            width: 100%
+
+            div.language-container
+                flex-direction: column
+
+                span
+                    font-size: 10px
+
+                .flag
+                    img
+                        width: 5px !important
+
+        div.language-container
+            @include mixin.flex-center
+            gap: 1rem

@@ -25,10 +25,7 @@ main
             text-align: center
 
         h1
-            background-image: linear-gradient(-90deg, variables.$primary-color 0%, #496be3 50%, variables.$primary-color 100%)
-            background-clip: text
-            -webkit-background-clip: text
-            color: transparent
+            @include mixin.title-gradient
             margin-top: -1.3rem
             font-size: 64px
 
