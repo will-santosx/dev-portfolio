@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { HiOutlineChartPie, HiFilm, HiOutlineDotsCircleHorizontal } from 'react-icons/hi'
+import { HiClipboardList, HiFilm, HiOutlineDotsCircleHorizontal } from 'react-icons/hi'
 
 const myProjects = [
     {
         id: 'studyTaskify', 
         title: 'StudyTaskify', 
-        icon: <HiOutlineChartPie/>, 
+        icon: <HiClipboardList/>, 
         description: "Interface agradável - Drag'n drop - Responsivo - Primeiro projeto com JQuery", 
         techs: 'HTML, Typescript, SASS, JQuery',
         repURL: 'https://github.com/will-santosx/study-taskify-app', 
