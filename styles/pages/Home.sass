@@ -81,22 +81,10 @@ main.home-page
         button
             width: 100%
             height: 100%
-            background-color: transparent
-            border: solid 2px variables.$primary-color
-            border-radius: 15px
-            font-family: 'Poppins', sans-serif
-            font-size: 24px
-            transition: 0.5s all
-            color: #fff
-            cursor: pointer
+            @include mixin.primary-button
 
             @include mixin.mobile
                 font-size: 16px
-
-            &:hover
-                background-color: variables.$primary-color
-                scale: 102%
-                filter: drop-shadow(#3354cc89 0 0 8px)
 
     img.mobile-image
         display: none

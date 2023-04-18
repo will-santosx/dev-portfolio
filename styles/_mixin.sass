@@ -33,5 +33,20 @@
 @mixin icon-color($color)
     svg
         color: $color
+
+@mixin primary-button
+    background-color: transparent
+    border: solid 2px variables.$primary-color
+    border-radius: 15px
+    font-family: 'Poppins', sans-serif
+    font-size: 24px
+    transition: 0.5s all
+    color: #fff
+    cursor: pointer
+
+    &:hover
+        background-color: variables.$primary-color
+        scale: 105%
+        filter: drop-shadow(#3354cc89 0 0 8px)
     
     

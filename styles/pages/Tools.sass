@@ -90,14 +90,9 @@ main.tools-page
                 color: variables.$primary-color
 
             button
-                font-family: 'Poppins', sans-serif
-                padding: 8px
-                border: 1px solid variables.$primary-color
-                cursor: pointer
-                background-color: transparent
-                color: #fff
-                border-radius: 10px
-                transition: 0.2s all
+                @include mixin.primary-button
+                font-size: medium
+                padding: 10px
 
                 &:hover
                     scale: 110%
