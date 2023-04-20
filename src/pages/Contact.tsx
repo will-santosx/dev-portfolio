@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <main className='contact-page'>
       <h1>Entre em contato diretamente comigo!</h1>
-      <form id='contact-form' action="https://formsubmit.co/o.santxz@proton.me" method="POST">
+      <form id='contact-form' action="https://formsubmit.co/e32134f4ee91c22f07d642eb9c82f02e" method="POST">
         <div className='contact-inputs-container'>
           <input onInvalid={invalidInput} type="text" name='Nome' id='contact-input-firstname' placeholder='Primeiro nome' maxLength={20} minLength={3} required />
           <input onInvalid={invalidInput} type="text" name='Sobrenome' id='contact-input-lastname' placeholder='Segundo nome' maxLength={36} minLength={3} required />
