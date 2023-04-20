@@ -11,6 +11,9 @@ main.success-page
     svg
         font-size: 100px
         color: variables.$primary-color
+        filter: drop-shadow(#3354cc89 0 0 8px)
+        @include mixin.anim-image-apply
+
 
     h1
         @include mixin.title-gradient
@@ -22,3 +25,5 @@ main.success-page
         @include mixin.primary-button
         padding: 10px
         font-size: 18px
+
+@include mixin.image-anim

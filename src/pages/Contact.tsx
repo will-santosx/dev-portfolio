@@ -24,7 +24,7 @@ const Contact = () => {
           <input onInvalid={invalidInput} type="text" name='Sobrenome' id='contact-input-lastname' placeholder='Segundo nome' maxLength={36} minLength={3} required />
         </div>
         <input onInvalid={invalidInput} type="text" name='_subject' id='contact-input-subject' placeholder='Assunto' maxLength={40} minLength={5} required />
-        <input onInvalid={invalidInput} type="email" name="_replyto" id="contact-input-email" placeholder='Email' max={48} minLength={5} required />
+        <input onInvalid={invalidInput} type="email" name="email" id="contact-input-email" placeholder='Email' max={48} minLength={5} required />
         <textarea name="Mensagem" id="contact-textarea-message" cols={20} rows={10} placeholder='Digite sua mensagem'/>
         <button type='submit'>ENVIAR <FaPaperPlane/></button>
         <input type="hidden" name="_captcha" value="false"/>
