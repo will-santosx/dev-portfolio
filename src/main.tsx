@@ -10,6 +10,8 @@ import Contact from './pages/Contact';
 import Tools from './pages/Tools';
 import Projects from './pages/Projects';
 
+import SuccessMessage from './pages/SuccessMessage';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -36,7 +38,11 @@ const router = createBrowserRouter([
         element: <Tools/>
       },
     ]
-  }
+  },
+  {
+    path: 'sucesso',
+    element: <SuccessMessage/>
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

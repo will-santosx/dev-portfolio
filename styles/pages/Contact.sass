@@ -1,0 +1,59 @@
+@use '../mixin'
+@use '../variables'
+
+
+main.contact-page
+    width: 100%
+    @include mixin.flex-center
+    flex-direction: column
+
+    h1
+        @include mixin.title-gradient
+        font-size: 58px
+
+    form
+        display: flex
+        flex-direction: column
+
+        *
+            font-family: 'Poppins', sans-serif
+
+        textarea
+            resize: none
+
+        button
+            @include mixin.primary-button
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 10px
+            font-size: 20px
+
+            svg
+                font-size: 18px
+            
+        input, textarea
+            margin-bottom: 1rem
+            background-color: #000000d5
+            border: solid 1px transparent
+            padding: 5px
+            border-radius: 5px
+            color: #fff
+            transition: 0.25s all
+
+            &:focus
+                outline: none
+                border: solid 1px variables.$primary-color
+                background-color: #000
+
+
+    .contact-inputs-container
+        display: flex
+        gap: 1rem
+
+        .contact-input
+            display: flex
+            flex-direction: column
+
+.invalid-input
+    border: solid 1px #ff6060 !important
