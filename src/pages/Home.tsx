@@ -18,8 +18,8 @@ const Home = () => {
         <div className='role-tags'><span className='role-circle g'>●</span> Web</div>
       </div>
       <div className='home-buttons'>
-        <a href="#" target='_blank'><button>Currículo</button></a>
-        <a href="#" target='_blank'><button>Certificados</button></a>
+        <a href="https://drive.proton.me/urls/1DFQ5XDGZG#xOzXd0e6j15S" target='_blank'><button>Currículo</button></a>
+        <a href="https://drive.proton.me/urls/9FPKG73Y6C#gZVn5BT1DlPO" target='_blank'><button>Certificados</button></a>
       </div>
       <img className='desktop-image' src={DesktophomeImage} alt="Personagem virtual de Willians Santos" />
     </main>
